@@ -1,0 +1,83 @@
+h1, p, h2,ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type:none;
+}
+
+body{
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-color: #666;
+    background-image: url(images/background.gif);
+}
+
+.wrapper{
+    width:800px;
+    margin:50px auto; 
+    background-color:#ddd;
+}
+
+.header{
+    background-image: url(images/halloween-header-bg.png);
+    color:white;
+    height: 400px;
+    text-align: center;/*컨텐츠만 가운데 헤더는 안움직임. margin auto는 컨텐츠 개별 움직임 기법*/
+}
+
+.header .profile{
+    margin-top:50px;
+}
+
+.header h1{
+    color:violet;
+    margin: 10px auto;
+}
+
+.header p{
+    background-color:black;
+    color:#888;
+    width:400px;
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section{
+    background-color:white;
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    margin: 40px;/*div 상하단 마진 겹쳐짐 40px이 아닌 20px*/
+    padding: 20px;
+}
+
+.section h2{
+    color: orangered;
+    margin-bottom:20px;
+    border-bottom:2px solid #eee;
+}
+
+.section li:hover{
+    color:orangered;
+}
+
+.section li{
+    border-left:5px solid #ddd;
+    padding: 6px 10px 4px;
+
+}
+
+.footer{
+    background-color:#111;
+    color:#999;
+    padding: 10px 0;
+    text-align: center;
+    color: violet;
+    letter-spacing:5px;
+    text-indent: 5px;
+}
+
