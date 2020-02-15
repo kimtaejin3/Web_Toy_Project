@@ -1,0 +1,76 @@
+h1, p{
+    margin:0;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+body{
+    background-color:#999;
+    /*센터 고정*/ text-align: center;
+}
+
+.box{
+    background-color:white;
+    width:350px;
+    margin:400px 5px 0;
+    text-align:center;
+    display: inline-block;
+}
+
+.box.red{
+    color:red;
+}
+
+.box.green{
+    color:green;
+}
+
+.box.blue{
+    color:blue;
+}
+
+.box-robot{
+    margin-top:-300px;
+}
+
+.box-contents{
+    padding: 20px;
+}
+
+.box-contents h1{
+    margin-bottom: 20px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    display: inline-block;/*글자크기 만큼 축소*/
+}
+.box-contents p{
+ text-align: left;
+ color: #999;
+}
+
+.box-footer{
+    background-color: #efefef;
+    padding:20px;
+}
+
+.button{
+    vertical-align:bottom;
+    background-color: currentColor;
+    padding: 13px 20px 10px;
+    display: inline-block;
+    letter-spacing: 3px;
+    text-indent:3px;
+    border-bottom: 5px solid rgba(0,0,0,0.2);
+}
+
+.button:active{/*심화학습 내용*/
+    border-bottom: 0;
+    margin-top:5px;
+}
+
+.button span{
+    color: white;
+}
