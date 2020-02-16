@@ -1,0 +1,153 @@
+/* CSS Reset */
+
+body, ul,p, h1{
+    margin:0px;
+    padding:0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+body{
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrapper{
+    background-position:center;
+    background-image:url(images/rope.png);
+    width: 800px;
+    margin: 0px auto 100px;
+}
+
+.header{
+    text-align: center;
+}
+
+.logo{
+    background-image:url(images/logo.png);
+    display:inline-block;
+    width:450px;
+    height: 140px;
+    text-indent:-9999px;
+    margin:20px 0;
+    /*ir 기법!*/
+}
+
+.menu{
+    width:300px;
+    margin:0 auto;
+    color:#666;
+}
+
+.menu li{
+    margin-bottom:5px;
+}
+
+.menu li a{
+    border: 2px solid;
+    padding:5px 0;
+    display: block;
+}
+
+.menu li a:hover{
+    color: pink;
+}
+
+.section{
+    background-image: url(images/wood.png);
+    background-color: #7d410d;
+    margin: 50px 0;
+    padding:30px;
+    border: 10px solid #883a1d;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0,0,0,0.6);
+    color:antiquewhite;
+}
+
+.section h1{
+    margin-bottom: 20px;
+    font-size:50px;
+    line-height: 174px;/*고정값 1이면 추가로 더해지는 공간 사라짐 1아니면 고정*/
+    font-family: 'arial';/*line-height 와 height는 텍스트 위치에서의 차이*/
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.section:nth-child(even){
+    border-color:blue;
+}
+
+.section:nth-child(even) h1{
+    background-position: left center;
+    text-align: right;
+}
+.section h1.animal01{
+    background-image: url(images/animal01.png);
+    color:aqua;
+}
+.section h1.animal02{
+    background-image: url(images/animal02.png);
+    color:pink;
+}
+.section h1.animal03{
+    background-image: url(images/animal03.png);
+    color:green;
+}
+.section h1.animal04{
+    background-image: url(images/animal04.png);
+    color:antiquewhite;
+}
+.section h1.animal05{
+    background-image: url(images/animal05.png);
+    color:royalblue;
+}
+.section h1.animal06{
+    background-image: url(images/animal06.png);
+    color:navy;
+}
+.section h1.animal07{
+    background-image: url(images/animal07.png);
+    color:wheat;
+}
+
+.section p{
+    line-height: 1.6;/*1.6베 만큼*/   
+}
+
+.section p strong{
+    background-color:#883a1d;
+    padding:0 20px;
+    border-radius:10px;
+    color:yellow;
+}
+
+.footer{
+    color:antiquewhite;
+    background-color: #7d410d;
+    text-align: center;
+    border-bottom:10px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.footer::before{/*가상 요소: 추가하는 개념!! 컨텐츠 이전에*/
+    content: 'wow!';
+    background-image:url(images/ground.png);
+    display: block;
+    height: 50px;
+    text-indent:-9999px;
+    background-repeat: repeat-x;
+}
+
+.footer p{
+    padding: 10px 0;
+}
+

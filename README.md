@@ -14,3 +14,9 @@ making simple web at least once a week
 - display: block-> a태그에 사용하며 a태그는 inline속성이라 본래는 margin은 좌우만 적용되고, padding도 제대로 적용되지 않는다. 블록화를 하여 이를 해결한다. 
 - 가로정렬:인라인, 세로정렬:블록
 - 이미지 태그는 inline속성이다.
+
+## CSS 타이포그래피
+
+- line-height의 개념
+- line-height의 기본값은 normal
+- 1이되면 16px로 고정됨-> 폰트크기 바뀌어도 절대적인 크기가 변하지 않으.
