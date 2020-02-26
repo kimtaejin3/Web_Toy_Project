@@ -19,4 +19,8 @@ making simple web at least once a week
 
 - line-height의 개념
 - line-height의 기본값은 normal
-- 1이되면 16px로 고정됨-> 폰트크기 바뀌어도 절대적인 크기가 변하지 않으.
+- 1이되면 16px로 고정됨-> 폰트크기 바뀌어도 절대적인 크기가 변하지 않음.
+
+## float 속성으로 가로배치하기
+
+- inline-block의 한계 극복
