@@ -24,3 +24,9 @@ making simple web at least once a week
 ## float 속성으로 가로배치하기
 
 - inline-block의 한계 극복
+- 부모에 종속을 벗어난 떠있다는 개념
+
+## float속성으로 가로배치하기 두번째 이야기
+
+- display: flow-root의 개념, 최신개념
+- overflow: hidden, 낯선개념 학습.
