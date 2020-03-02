@@ -30,3 +30,10 @@ making simple web at least once a week
 
 - display: flow-root의 개념, 최신개념
 - overflow: hidden, 낯선개념 학습.
+
+## Position속성 입문하기
+
+- position relative 주위에 영향을 끼치지 않고(자신의 현재위치가 기준이됨), 위치를 바꾼다.
+- position absolute와 구별
+- 가까운 부모가 기준점, position relative 하면 그 안에 있게 됨.
+- 미니예제, %와 negative-margin

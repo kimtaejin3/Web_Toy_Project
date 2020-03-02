@@ -1,0 +1,113 @@
+body, h1, h2, p{
+    margin:0px;
+}
+
+h1{
+    font-size:100%;
+}
+
+/*
+html, body{
+    height: 100%;
+}*/
+
+.clearfix:after{
+    content:' ';
+    display: block;
+    clear:both;
+}
+
+body{
+    background-color:#ddd;
+}
+
+.cover{
+    color:white;
+    background-image: url(images/background.png);
+    background-size:cover;
+    background-position: center;
+    height:50vh;
+    font-size:5vw;
+    position: relative;
+}
+
+.cover h1{
+    position: absolute;
+    background-color: orangered;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.wrapper{
+    width:980px;
+    margin: 50px auto;
+}
+
+.section{
+    color:#999;
+    background-color: white;
+    margin: 50px 0;
+    padding:20px;
+    text-align: right;
+    position: relative;
+}
+
+.section-content{
+    display: inline-block;
+}
+
+.section h2{
+    margin-bottom:20px;
+    font-size:40px;
+    border-bottom: 10px solid;
+    display: inline-block;
+}
+
+.section.strawberry h2{
+    color:orangered;
+    border-color:forestgreen;
+}
+
+.section.orange h2{
+    color:orange;
+    border-color:antiquewhite;
+}
+.section.kiwi h2{
+    color:green;
+    border-color:brown;
+}
+
+.section p{
+    line-height: 1.6;
+    float:left;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.section p:last-child{
+    margin-right: 0;
+}
+
+.section-cover{
+    position: absolute;
+    left: 0;
+    top:0;
+    margin:0 -150px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.section:nth-child(even) {
+    text-align: left;
+
+}
+
+.section:nth-child(even) .section-cover{
+    /*숨어있는 left*/
+    left:auto;
+    right:0;
+
+}
