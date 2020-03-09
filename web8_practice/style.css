@@ -1,0 +1,184 @@
+/*Reset CSS*/
+body,p,ul,h1,p,h2{
+    margin:0;
+    padding:0;
+}
+
+li{
+   list-style-type: none; 
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper{
+    width:1200px;
+    margin:0 auto;
+}
+
+/* Commons */
+.clearfix::after{
+    content: ' ';
+    display:block;
+    clear:both;
+}
+
+.button{
+    background-color: purple;
+    color:violet;
+    display:inline-block;
+    padding:0.7em 1.2em 0.5em;
+}
+
+/*Component CSS*/
+body{
+    background-color: #111;
+    color:#999;
+    font-size: 14px;
+}
+
+.header{
+}
+
+.logo{
+    text-indent: -9999px;
+    overflow: hidden;
+    float: left;
+    background-image: url(images/logo.png);
+    height: 80px;/*float적용->블록*/
+    width:100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu{
+    float:left;
+}
+
+.menu li{
+    float:left;
+}
+
+.menu li a{
+    display:block;
+    height: 80px;
+    line-height: 80px;
+    padding:0 20px;
+    position: relative;
+}
+
+.menu li a::before{
+    content:'';
+    background-color: currentColor;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    height: 3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    margin:0 100px;
+    transition:margin 0.4s;
+}
+
+.menu li a:hover:before{
+    margin:0;
+}
+
+.menu li a:hover{
+    color:#fff;
+}
+
+.contents{
+    /*
+    background-color: rgba(255,255,255,0.4);
+*/
+}
+
+.cover{
+    background-image: url(images/cover.png);
+    height: 300px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cover-car{
+    position :absolute;
+    right: 0;
+    top:-60px;
+}
+
+.cover-contents{
+    background-color: white;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    margin:20px;
+    padding:20px;
+    border-radius: 3px;
+}
+
+.cover-contents h1{
+    line-height: 1;
+    font-family: 'Sen', sans-serif;
+}
+
+.cover-contents h1 strong{
+    display:block;
+    color:orangered
+}
+
+.cover-contents p{
+    margin:10px 0;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: bold;
+    color:orange;
+}
+
+.price::before{
+    content:'$';
+}
+
+.price::after{
+    content: '/mo';
+    font-size:0.5em;
+    color:#999;
+}
+
+.description{
+    width:300px;
+}
+
+.service{
+    padding: 30px 0;
+}
+
+.service-item{
+    float:left;
+    width:33.33333333333%;
+}
+
+.service-item-cover{
+    float:left;
+}
+
+.service-item-contents{
+    overflow:hidden;
+    padding: 5px 10px;
+}
+
+.service-item-contents h2{
+    margin-bottom: 20px;
+    color:#ddd;
+}
+
+.footer{
+    border-top:1px solid #333;
+    padding: 20px 0;
+}
