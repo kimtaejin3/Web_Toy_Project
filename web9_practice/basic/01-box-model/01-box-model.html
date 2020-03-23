@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>01 box-model</title>
+        <style>
+            div.wrapper{
+				background-color: orange;
+				width:50%;
+				height:200px;
+				/*box-sizing:border-box; 이걸 써야함*/
+			}
+			div.right{
+				margin-left: auto;
+			}
+			div.padding{
+				background-color: aqua;
+				padding:10px;
+			}
+		
+        </style>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<div class="padding">
+			wow
+			</div>
+		</div>
+		<div class="wrapper right">
+			<div class="padding">
+				wow
+			</div>
+		</div>
+	</body>
+</html>
