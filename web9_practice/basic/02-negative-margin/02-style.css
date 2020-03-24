@@ -1,5 +1,13 @@
-body {
+body, h2, ul{
     margin: 0;
+    padding:0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
     background-color: #ddd;
 }
 
@@ -8,6 +16,7 @@ body {
     background-image: url(images/cover.png);
     background-position: center;
     overflow: hidden;
+    margin-bottom:-100px;
 }
 
 .contents {
@@ -20,7 +29,7 @@ body {
 }
 
 .box-wrapper {
-    overflow: hidden;
+    display:flow-root;
     width: 960px;
     margin: 50px auto;
 }
@@ -35,4 +44,66 @@ body {
     line-height: 100px;
     font-family: 'arial';
     font-size: 50px;
+    position: relative;
+}
+
+.box:hover .box-inside{
+    margin:-30px;
+    z-index:1;
+}
+
+.box-inside{
+    background-color: red;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    background-image: url(images/cover04.png);
+    transition:all .4s;
+}
+
+.section{
+    background-color:#efefef;
+    padding:20px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.list{
+    padding-left: 1em;
+}
+
+.list li{
+    margin-bottom:0.5em;
+}
+
+.list li:before{
+    content:' ';
+    width:0.6em;
+    height: 0.6em;
+    background-color: orangered;
+    border-radius: 50%;
+    margin-right:0.4em;
+    margin-left: -1em;
+    display: inline-block;
+}
+
+.list li:nth-child(even)::before{
+    background-color: yellow;
+}
+
+.map{
+    width:auto;
+    background-color: orange;
+    margin: 30px -50px;/*width가 지정되지 않았을 때*/
+    padding:20px;
+    transition: margin .5s;
+}
+
+.map:hover{
+    margin:30px -100px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
