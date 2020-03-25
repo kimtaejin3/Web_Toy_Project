@@ -1,4 +1,4 @@
-body, h1, ul{
+body, h1, ul, h2, p{
     margin:0;
     padding:0;
 }
@@ -30,7 +30,8 @@ body{
     position: absolute;
     left:50%;
     top:0;
-    bottom:-100px;
+    bottom:0;
+    margin:100px 0 -100px;
     width:4px;
     transform:translateX(-50%);
 }
@@ -51,16 +52,28 @@ body{
     border-radius: 50%;
     right: 0;
     border: 3px solid dodgerblue;
-    margin:0 -10px;
+    margin: 50px -10px;
     background-image: url(images/bg.png);
+}
+
+.timeline-item::after{
+    content:' ';
+    background-color: dodgerblue;
+    position: absolute;
+    right:0;
+    width:20px;
+    height: 5px;
+    top:58px;
+    margin: 0 40px;
 }
 
 .timeline-item:nth-child(even){
     margin-left: auto;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -220px;
+    margin-bottom: -220px;
 }
 
+.timeline-item:nth-child(even)::after,
 .timeline-item:nth-child(even)::before{
     left:0;
 }
@@ -70,9 +83,27 @@ body{
     min-height: 400px;
 }
 
+.tour-cover{
+    width:100%;
+}
 
+.tour-contents{
+    padding:30px;
+}
 
+.tour-contents h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
 
+.tour-contents h2 strong{
+    display:block;
+    color:#999;
+}
+
+.tour-contents p{
+    color:#999;
+}
 
 
 
