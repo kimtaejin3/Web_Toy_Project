@@ -1,12 +1,21 @@
 /*css reset*/
-body,p{
+body,p,ul,h1,p{
     margin:0;
     padding:0;
+}
+
+ul{
+   list-style-type: none;
 }
 
 a{
     text-decoration: none;
     color:inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size:100%;
 }
 
 /*layout*/
@@ -43,8 +52,22 @@ a{
     background-color: orangered;
 }
 
-
 /*Componets*/
+
+.list li{
+    margin-bottom:0.5em;
+}
+
+.list li:before{
+   
+    content:' ';
+    width:5px;
+    height: 5px;
+    background-color: #888;
+    border-radius: 50%;
+    margin-right:0.4em;
+    display: inline-block;
+}
 
 .mb_5{
     margin-bottom:5px;
@@ -110,10 +133,61 @@ body{
 }
 
 .course-cover{
+    background-size: cover;
+    background-position: center;
     background-image: url(images/cover.png);
+    padding:30px;
+}
+
+.course-creater{
+    float:right;
+    margin-left:10px;
+    width:100px;
+    text-align: right;
+}
+
+.course-creater-logo{
+    width:50px;
+    border-radius: 50px;
+}
+
+.course-title{
+    overflow: hidden;
+}
+
+.course-title h1{
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.course-title p{
+    margin-bottom: 20px;
 }
 
 .course-section{
     background-color: orange;
     margin:20px 0;
+}
+
+.star:before,
+.star{
+    content:' ';
+    background-image: url(images/star-sprite.png);
+    width:150px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.star:before {
+    width: 0;
+    display: block;
+    background-position: left bottom;
+}
+
+.star_4:before{
+    width:80%;
 }
